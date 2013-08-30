@@ -1,0 +1,29 @@
+%form#movie-form.pure-form.pure-form-aligned{ :action => "/movie/create", :method => "post", :enctype => "multipart/form-data" }
+  %fieldset
+    %legend= @title
+    .pure-control-group
+      %label Title:
+      %input#title{ :type => "text", :name => "movie[title]" }
+
+    .pure-control-group
+      %label Description:
+      %textarea#description{ :name => "movie[description]" }
+
+    .pure-control-group
+      %label Genre:
+      %input#genre{ :type => "text", :name => "movie[genre]" }
+
+    .pure-control-group
+      %label Length:
+      %input#length{ :type => "text", :name => "movie[length]" }
+
+    .pure-control-group
+      %label Image:
+      %input#image-file{ :type => "file", :name => "image-file" }
+
+    .pure-control-group
+      %label Movie:
+      %input#movie-file{ :type => "file", :name => "movie-file" }
+
+    .pure-controls
+      %button.pure-button.pure-button-primary{ :type => "submit" } Submit
