@@ -2,3 +2,4 @@
 /media/*
 /vendor
 .bundle/
+/public/media/*
