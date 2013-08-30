@@ -17,8 +17,8 @@ post '/movie/create' do
   movie            = Movie.new(params[:movie])
   image_attachment = movie.attachments.new
   movie_attachment = movie.attachments.new
-  image_attachment.handle_upload(params['image-file'])
-  movie_attachment.handle_upload(params['movie-file'])
+  image_attachment.import(params['image-file'])
+  movie_attachment.import(params['movie-file'])
   if movie.save
     @message = 'Movie was saved.'
   else

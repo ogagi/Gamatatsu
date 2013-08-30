@@ -4,7 +4,7 @@
     %tr
       %td Title
       %td Length
-      %td Description
+      %td Sinopsys
       %td Genre
   %tbody
     - @movies.each do |movie|
@@ -12,5 +12,5 @@
         %td
           %a{ :href => "/movie/show/#{movie.id}" }= movie.title
         %td= movie.length
-        %td= movie.description
+        %td= movie.sinopsys
         %td= movie.genre

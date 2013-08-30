@@ -27,7 +27,7 @@ class Movie
   property :created_at,     DateTime
   property :sinopsys,       Text
   property :genre,          String
-  property :lenght,         Integer
+  property :length,         Integer
   property :title,          String
   property :original_title, String
   property :updated_at,     DateTime
@@ -55,8 +55,7 @@ class Attachment
     self.filename = file[:filename]
     self.mime_type = file[:type]
     self.path = File.join(Dir.pwd,
-                          $config.file_properties.send(supported_mime_type['type']).absolute_path,
-                          file[:filename])
+                          $config.file_properties.send(supported_mime_type['type']).absolute_path, file[:filename])
     self.size = File.size(file[:tempfile])
     File.open(path, 'wb') do |f|
       f.write(file[:tempfile].read)

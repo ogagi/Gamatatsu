@@ -1,10 +1,10 @@
 file_properties:
   image:
     absolute_path: 'media/image'
-    link_path:     'public/images/image'
-  video:
+    link_path:     'public/media/image'
+  movie:
     absolute_path: 'media/video'
-    link_path:     'public/images/video'
+    link_path:     'public/media/video'
 supported_mime_types:
   - extension:     'jpeg'
     mime_type:     'image/jpeg'
@@ -14,13 +14,13 @@ supported_mime_types:
     type:          'image'
   - extension:     'm4v'
     mime_type:     'video/mv4'
-    type:          'video'
+    type:          'movie'
   - extension:     'mov'
     mime_type:     'video/quicktime'
-    type:          'video'
+    type:          'movie'
   - extension:     'mp4'
     mime_type:     'video/mp4'
-    type:          'video'
+    type:          'movie'
   - extension:     'png'
     mime_type:     'image/png'
     type:          'image'

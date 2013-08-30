@@ -4,14 +4,14 @@
     %tr
       %td Title
       %td Length
-      %td Description
+      %td Sinopsys
       %td Genre
       %td
   %tbody
     %tr
       %td= @movie.title
       %td= @movie.length
-      %td= @movie.description
+      %td= @movie.sinopsys
       %td= @movie.genre
       %td
         %a.pure-button.pure-button-primary{ :href => "/movie/watch/#{@movie.id}" } Watch
