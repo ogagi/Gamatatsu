@@ -1,5 +1,9 @@
 /db
-/media/*
 /vendor
 .bundle/
-/public/media/*
+*.jpg
+*.mp4
+*.jpeg
+*.mov
+*.m4v
+*.png
